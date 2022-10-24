@@ -13,7 +13,4 @@ execute 'RBENV Installation' do
     #command 'rbenv global 2.7.6'
 end
 
-#apt_package 'ruby' do
-#    action :install
-#    not_if "test -f /usr/bin/ruby"
-#end
+
