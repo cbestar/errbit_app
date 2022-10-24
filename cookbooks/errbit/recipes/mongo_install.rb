@@ -30,13 +30,12 @@ apt_package 'mongodb-org' do
 end
 
 execute 'Start mongoDB' do
-   command 'systemctl start mongod'
+   command 'systemctl stop mongod'
 end
 
 # Enable and check if started
-describe service('mongod') do
-      it { should be_enabled }
-      it { should be_running }
-    end
+service 'mongod' do
+   action [:enable, :start]   
+end
 
 
