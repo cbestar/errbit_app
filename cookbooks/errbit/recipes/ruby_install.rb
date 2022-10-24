@@ -5,6 +5,10 @@
 # Copyright:: 2022, Serghei vrazovski, All Rights Reserved.
 
 apt_package 'ruby' do
+    action :remove
+end
+
+apt_package 'ruby' do
     action :install
     not_if "test -f /usr/bin/ruby"
 end
