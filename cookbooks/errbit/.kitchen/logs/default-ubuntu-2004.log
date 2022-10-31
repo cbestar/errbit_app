@@ -1,0 +1,225 @@
+I, [2022-10-31T16:24:27.651108 #321159]  INFO -- default-ubuntu-2004: -----> Converging <default-ubuntu-2004>...
+I, [2022-10-31T16:24:27.698349 #321159]  INFO -- default-ubuntu-2004: Preparing files for transfer
+I, [2022-10-31T16:24:27.698545 #321159]  INFO -- default-ubuntu-2004: Installing cookbooks for Policyfile /home/svrazovski/chef-repo/cookbooks/errbit/Policyfile.rb using `/opt/chef-workstation/bin/chef-cli install`
+I, [2022-10-31T16:24:28.245789 #321159]  INFO -- default-ubuntu-2004: Installing cookbooks from lock
+I, [2022-10-31T16:24:28.251652 #321159]  INFO -- default-ubuntu-2004: Installing errbit 0.1.0
+I, [2022-10-31T16:24:28.266576 #321159]  INFO -- default-ubuntu-2004: Updating policy lock using `/opt/chef-workstation/bin/chef-cli update`
+I, [2022-10-31T16:24:28.837109 #321159]  INFO -- default-ubuntu-2004: Building policy errbit
+I, [2022-10-31T16:24:28.837236 #321159]  INFO -- default-ubuntu-2004: Expanded run list: recipe[errbit::default]
+I, [2022-10-31T16:24:28.837263 #321159]  INFO -- default-ubuntu-2004: Caching Cookbooks...
+I, [2022-10-31T16:24:28.837282 #321159]  INFO -- default-ubuntu-2004: Installing errbit >= 0.0.0 from path
+I, [2022-10-31T16:24:30.800588 #321159]  INFO -- default-ubuntu-2004: 
+I, [2022-10-31T16:24:30.800690 #321159]  INFO -- default-ubuntu-2004: Lockfile written to /home/svrazovski/chef-repo/cookbooks/errbit/Policyfile.lock.json
+I, [2022-10-31T16:24:30.904473 #321159]  INFO -- default-ubuntu-2004: Policy revision id: de0d7c8032ecb6fc086fd491ccf71cd589f15c9aaad04cbc2015a61189a097f5
+I, [2022-10-31T16:24:30.925737 #321159]  INFO -- default-ubuntu-2004: Preparing dna.json
+I, [2022-10-31T16:24:30.926092 #321159]  INFO -- default-ubuntu-2004: Exporting cookbook dependencies from Policyfile /tmp/default-ubuntu-2004-sandbox-20221031-321159-ss237 using `/opt/chef-workstation/bin/chef-cli export`...
+I, [2022-10-31T16:24:32.220142 #321159]  INFO -- default-ubuntu-2004: Exported policy 'errbit' to /tmp/default-ubuntu-2004-sandbox-20221031-321159-ss237
+I, [2022-10-31T16:24:32.220215 #321159]  INFO -- default-ubuntu-2004: 
+I, [2022-10-31T16:24:32.220238 #321159]  INFO -- default-ubuntu-2004: To converge this system with the exported policy, run:
+I, [2022-10-31T16:24:32.220256 #321159]  INFO -- default-ubuntu-2004:   cd /tmp/default-ubuntu-2004-sandbox-20221031-321159-ss237
+I, [2022-10-31T16:24:32.220272 #321159]  INFO -- default-ubuntu-2004:   chef-client -z
+I, [2022-10-31T16:24:32.240208 #321159]  INFO -- default-ubuntu-2004: Removing non-cookbook files before transfer
+I, [2022-10-31T16:24:32.240646 #321159]  INFO -- default-ubuntu-2004: Preparing validation.pem
+I, [2022-10-31T16:24:32.241092 #321159]  INFO -- default-ubuntu-2004: Preparing client.rb
+I, [2022-10-31T16:24:32.869254 #321159]  INFO -- default-ubuntu-2004: -----> Chef installation detected (install only if missing)
+I, [2022-10-31T16:24:32.937381 #321159]  INFO -- default-ubuntu-2004: Transferring files to <default-ubuntu-2004>
+I, [2022-10-31T16:24:34.803872 #321159]  INFO -- default-ubuntu-2004: Chef Infra Client, version 18.0.169
+I, [2022-10-31T16:24:34.803919 #321159]  INFO -- default-ubuntu-2004: Patents: https://www.chef.io/patents
+I, [2022-10-31T16:24:34.804056 #321159]  INFO -- default-ubuntu-2004: Infra Phase starting
+I, [2022-10-31T16:24:36.329955 #321159]  INFO -- default-ubuntu-2004: Using Policyfile 'errbit' at revision 'de0d7c8032ecb6fc086fd491ccf71cd589f15c9aaad04cbc2015a61189a097f5'
+I, [2022-10-31T16:24:36.360175 #321159]  INFO -- default-ubuntu-2004: Resolving cookbooks for run list: ["errbit::default@0.1.0 (bb85bc2)"]
+I, [2022-10-31T16:24:36.416332 #321159]  INFO -- default-ubuntu-2004: Synchronizing cookbooks:
+I, [2022-10-31T16:24:36.471198 #321159]  INFO -- default-ubuntu-2004:   - errbit (0.1.0)
+I, [2022-10-31T16:24:36.473972 #321159]  INFO -- default-ubuntu-2004: Installing cookbook gem dependencies:
+I, [2022-10-31T16:24:36.488403 #321159]  INFO -- default-ubuntu-2004: Compiling cookbooks...
+I, [2022-10-31T16:24:36.764044 #321159]  INFO -- default-ubuntu-2004: Loading Chef InSpec profile files:
+I, [2022-10-31T16:24:36.764543 #321159]  INFO -- default-ubuntu-2004: Loading Chef InSpec input files:
+I, [2022-10-31T16:24:36.765392 #321159]  INFO -- default-ubuntu-2004: Loading Chef InSpec waiver files:
+I, [2022-10-31T16:24:36.769115 #321159]  INFO -- default-ubuntu-2004: Recipe: errbit::sysprep
+I, [2022-10-31T16:24:36.918626 #321159]  INFO -- default-ubuntu-2004:   * apt_package[curl] action install (up to date)
+I, [2022-10-31T16:24:37.038480 #321159]  INFO -- default-ubuntu-2004:   * apt_package[g++] action install (up to date)
+I, [2022-10-31T16:24:37.200348 #321159]  INFO -- default-ubuntu-2004:   * apt_package[gcc] action install (up to date)
+I, [2022-10-31T16:24:37.355278 #321159]  INFO -- default-ubuntu-2004:   * apt_package[autoconf] action install (up to date)
+I, [2022-10-31T16:24:37.498066 #321159]  INFO -- default-ubuntu-2004:   * apt_package[automake] action install (up to date)
+I, [2022-10-31T16:24:37.674530 #321159]  INFO -- default-ubuntu-2004:   * apt_package[bison] action install (up to date)
+I, [2022-10-31T16:24:37.815696 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libc6-dev] action install (up to date)
+I, [2022-10-31T16:24:37.966133 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libffi-dev] action install (up to date)
+I, [2022-10-31T16:24:38.103444 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libgdbm-dev] action install (up to date)
+I, [2022-10-31T16:24:38.212580 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libncurses5-dev] action install (up to date)
+I, [2022-10-31T16:24:38.363539 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libsqlite3-dev] action install (up to date)
+I, [2022-10-31T16:24:38.496639 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libtool] action install (up to date)
+I, [2022-10-31T16:24:38.627367 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libyaml-dev] action install (up to date)
+I, [2022-10-31T16:24:38.768943 #321159]  INFO -- default-ubuntu-2004:   * apt_package[make] action install (up to date)
+I, [2022-10-31T16:24:38.902359 #321159]  INFO -- default-ubuntu-2004:   * apt_package[pkg-config] action install (up to date)
+I, [2022-10-31T16:24:39.027012 #321159]  INFO -- default-ubuntu-2004:   * apt_package[sqlite3] action install (up to date)
+I, [2022-10-31T16:24:39.151153 #321159]  INFO -- default-ubuntu-2004:   * apt_package[zlib1g-dev] action install (up to date)
+I, [2022-10-31T16:24:39.310878 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libgmp-dev] action install (up to date)
+I, [2022-10-31T16:24:39.429291 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libreadline-dev] action install (up to date)
+I, [2022-10-31T16:24:39.565624 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libssl-dev] action install (up to date)
+I, [2022-10-31T16:24:39.575305 #321159]  INFO -- default-ubuntu-2004:   Converging 37 resources
+I, [2022-10-31T16:24:39.593791 #321159]  INFO -- default-ubuntu-2004:   * file[/home/vagrant/AAAAAAAA.txt] action create (up to date)
+I, [2022-10-31T16:24:39.594237 #321159]  INFO -- default-ubuntu-2004:   * apt_update[UPDATE BEFORE DEPENDENSIES INSTALLATION] action update
+I, [2022-10-31T16:24:39.600280 #321159]  INFO -- default-ubuntu-2004:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2022-10-31T16:24:39.619362 #321159]  INFO -- default-ubuntu-2004:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2022-10-31T16:24:39.622404 #321159]  INFO -- default-ubuntu-2004:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2022-10-31T16:24:42.568915 #321159]  INFO -- default-ubuntu-2004:     * execute[apt-get -q update] action run
+I, [2022-10-31T16:24:42.569186 #321159]  INFO -- default-ubuntu-2004:       - execute ["apt-get", "-q", "update"]
+I, [2022-10-31T16:24:42.581820 #321159]  INFO -- default-ubuntu-2004:     - force update new lists of packages
+I, [2022-10-31T16:24:42.585896 #321159]  INFO -- default-ubuntu-2004:   * apt_package[curl] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.587389 #321159]  INFO -- default-ubuntu-2004:   * apt_package[g++] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.588500 #321159]  INFO -- default-ubuntu-2004:   * apt_package[gcc] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.590270 #321159]  INFO -- default-ubuntu-2004:   * apt_package[autoconf] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.591600 #321159]  INFO -- default-ubuntu-2004:   * apt_package[automake] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.593028 #321159]  INFO -- default-ubuntu-2004:   * apt_package[bison] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.593945 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libc6-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.595796 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libffi-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.597407 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libgdbm-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.598832 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libncurses5-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.599598 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libsqlite3-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.600867 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libtool] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.611951 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libyaml-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.612232 #321159]  INFO -- default-ubuntu-2004:   * apt_package[make] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.626783 #321159]  INFO -- default-ubuntu-2004:   * apt_package[pkg-config] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.626845 #321159]  INFO -- default-ubuntu-2004:   * apt_package[sqlite3] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.626891 #321159]  INFO -- default-ubuntu-2004:   * apt_package[zlib1g-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.626910 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libgmp-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.626945 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libreadline-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.626961 #321159]  INFO -- default-ubuntu-2004:   * apt_package[libssl-dev] action nothing (skipped due to action :nothing)
+I, [2022-10-31T16:24:42.681779 #321159]  INFO -- default-ubuntu-2004:   * apt_package[git] action install (skipped due to not_if)
+I, [2022-10-31T16:24:42.719538 #321159]  INFO -- default-ubuntu-2004:   * directory[/home/vagrant/errbit_app] action delete
+I, [2022-10-31T16:24:42.731220 #321159]  INFO -- default-ubuntu-2004:     - delete existing directory /home/vagrant/errbit_app
+I, [2022-10-31T16:24:42.782239 #321159]  INFO -- default-ubuntu-2004:   * directory[/home/vagrant/errbit_app] action create
+I, [2022-10-31T16:24:42.782300 #321159]  INFO -- default-ubuntu-2004:     - create new directory /home/vagrant/errbit_app
+I, [2022-10-31T16:24:42.782318 #321159]  INFO -- default-ubuntu-2004:     - change mode from '' to '0755'
+I, [2022-10-31T16:24:42.782356 #321159]  INFO -- default-ubuntu-2004:     - change owner from '' to 'vagrant'
+I, [2022-10-31T16:24:42.782370 #321159]  INFO -- default-ubuntu-2004:     - change group from '' to 'vagrant'
+I, [2022-10-31T16:24:54.571573 #321159]  INFO -- default-ubuntu-2004:   * execute[Git clone errbit application] action run
+I, [2022-10-31T16:24:54.572322 #321159]  INFO -- default-ubuntu-2004:     - execute git clone https://github.com/errbit/errbit.git .
+I, [2022-10-31T16:24:54.580801 #321159]  INFO -- default-ubuntu-2004: Recipe: errbit::ruby_install
+I, [2022-10-31T16:25:02.879837 #321159]  INFO -- default-ubuntu-2004:   * execute[RBENV Installation] action run
+I, [2022-10-31T16:25:02.880778 #321159]  INFO -- default-ubuntu-2004:     - execute curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+I, [2022-10-31T16:25:02.970269 #321159]  INFO -- default-ubuntu-2004:   * bash[run bundle install in app directory] action run
+I, [2022-10-31T16:25:02.972666 #321159]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-10-31T16:25:03.045068 #321159]  INFO -- default-ubuntu-2004:   * bash[run bundle install in app directory] action run
+I, [2022-10-31T16:25:03.070281 #321159]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-10-31T16:25:03.142677 #321159]  INFO -- default-ubuntu-2004:   * bash[SOURCE] action run
+I, [2022-10-31T16:25:03.144390 #321159]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-10-31T16:25:03.222879 #321159]  INFO -- default-ubuntu-2004:   * bash[run bundle install in app directory] action run
+I, [2022-10-31T16:25:03.223620 #321159]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-10-31T16:25:03.340763 #321159]  INFO -- default-ubuntu-2004:   * bash[ruby install] action run
+I, [2022-10-31T16:25:03.340812 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.341002 #321159]  INFO -- default-ubuntu-2004:     ================================================================================
+I, [2022-10-31T16:25:03.341035 #321159]  INFO -- default-ubuntu-2004:     Error executing action `run` on resource 'bash[ruby install]'
+I, [2022-10-31T16:25:03.341057 #321159]  INFO -- default-ubuntu-2004:     ================================================================================
+I, [2022-10-31T16:25:03.341266 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.341313 #321159]  INFO -- default-ubuntu-2004:     Mixlib::ShellOut::ShellCommandFailed
+I, [2022-10-31T16:25:03.341353 #321159]  INFO -- default-ubuntu-2004:     ------------------------------------
+I, [2022-10-31T16:25:03.341369 #321159]  INFO -- default-ubuntu-2004:     Expected process to exit with [0], but received '1'
+I, [2022-10-31T16:25:03.341906 #321159]  INFO -- default-ubuntu-2004:     ---- Begin output of "bash"  ----
+I, [2022-10-31T16:25:03.341937 #321159]  INFO -- default-ubuntu-2004:     STDOUT: 
+I, [2022-10-31T16:25:03.341966 #321159]  INFO -- default-ubuntu-2004:     STDERR: rbenv: /home/vagrant/.rbenv/versions/2.7.6 already exists
+I, [2022-10-31T16:25:03.341983 #321159]  INFO -- default-ubuntu-2004:     ---- End output of "bash"  ----
+I, [2022-10-31T16:25:03.342173 #321159]  INFO -- default-ubuntu-2004:     Ran "bash"  returned 1
+I, [2022-10-31T16:25:03.342318 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.342747 #321159]  INFO -- default-ubuntu-2004:     Resource Declaration:
+I, [2022-10-31T16:25:03.342767 #321159]  INFO -- default-ubuntu-2004:     ---------------------
+I, [2022-10-31T16:25:03.342794 #321159]  INFO -- default-ubuntu-2004:     # In /tmp/kitchen/cache/cookbooks/errbit/recipes/ruby_install.rb
+I, [2022-10-31T16:25:03.342821 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.342838 #321159]  INFO -- default-ubuntu-2004:      31: bash 'ruby install' do
+I, [2022-10-31T16:25:03.342853 #321159]  INFO -- default-ubuntu-2004:      32:     code '/home/vagrant/.rbenv/bin/rbenv install 2.7.6'
+I, [2022-10-31T16:25:03.342867 #321159]  INFO -- default-ubuntu-2004:      33: end
+I, [2022-10-31T16:25:03.343038 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.343150 #321159]  INFO -- default-ubuntu-2004:     Compiled Resource:
+I, [2022-10-31T16:25:03.343181 #321159]  INFO -- default-ubuntu-2004:     ------------------
+I, [2022-10-31T16:25:03.343420 #321159]  INFO -- default-ubuntu-2004:     # Declared in /tmp/kitchen/cache/cookbooks/errbit/recipes/ruby_install.rb:31:in `from_file'
+I, [2022-10-31T16:25:03.343444 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.343456 #321159]  INFO -- default-ubuntu-2004:     bash("ruby install") do
+I, [2022-10-31T16:25:03.343464 #321159]  INFO -- default-ubuntu-2004:       action [:run]
+I, [2022-10-31T16:25:03.343484 #321159]  INFO -- default-ubuntu-2004:       default_guard_interpreter :default
+I, [2022-10-31T16:25:03.343493 #321159]  INFO -- default-ubuntu-2004:       interpreter "bash"
+I, [2022-10-31T16:25:03.343505 #321159]  INFO -- default-ubuntu-2004:       declared_type :bash
+I, [2022-10-31T16:25:03.343513 #321159]  INFO -- default-ubuntu-2004:       cookbook_name "errbit"
+I, [2022-10-31T16:25:03.343520 #321159]  INFO -- default-ubuntu-2004:       recipe_name "ruby_install"
+I, [2022-10-31T16:25:03.343528 #321159]  INFO -- default-ubuntu-2004:       code "/home/vagrant/.rbenv/bin/rbenv install 2.7.6"
+I, [2022-10-31T16:25:03.343548 #321159]  INFO -- default-ubuntu-2004:     end
+I, [2022-10-31T16:25:03.343557 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.344244 #321159]  INFO -- default-ubuntu-2004:     System Info:
+I, [2022-10-31T16:25:03.344266 #321159]  INFO -- default-ubuntu-2004:     ------------
+I, [2022-10-31T16:25:03.344278 #321159]  INFO -- default-ubuntu-2004:     chef_version=18.0.169
+I, [2022-10-31T16:25:03.344286 #321159]  INFO -- default-ubuntu-2004:     platform=ubuntu
+I, [2022-10-31T16:25:03.344298 #321159]  INFO -- default-ubuntu-2004:     platform_version=20.04
+I, [2022-10-31T16:25:03.344308 #321159]  INFO -- default-ubuntu-2004:     ruby=ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
+I, [2022-10-31T16:25:03.344326 #321159]  INFO -- default-ubuntu-2004:     program_name=/opt/chef/bin/chef-client
+I, [2022-10-31T16:25:03.344339 #321159]  INFO -- default-ubuntu-2004:     executable=/opt/chef/bin/chef-client
+I, [2022-10-31T16:25:03.344749 #321159]  INFO -- default-ubuntu-2004:     
+I, [2022-10-31T16:25:03.346679 #321159]  INFO -- default-ubuntu-2004: 
+I, [2022-10-31T16:25:03.346702 #321159]  INFO -- default-ubuntu-2004: Running handlers:
+I, [2022-10-31T16:25:03.347028 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] ERROR: Running exception handlers
+I, [2022-10-31T16:25:03.347361 #321159]  INFO -- default-ubuntu-2004: Running handlers complete
+I, [2022-10-31T16:25:03.347396 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] ERROR: Exception handlers complete
+I, [2022-10-31T16:25:03.348366 #321159]  INFO -- default-ubuntu-2004: Infra Phase failed. 10 resources updated in 28 seconds
+I, [2022-10-31T16:25:03.361604 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2022-10-31T16:25:03.364243 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2022-10-31T16:25:03.377697 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] FATAL: PLEASE PROVIDE THE CONTENTS OF THE stacktrace.out FILE (above) IF YOU FILE A BUG REPORT
+I, [2022-10-31T16:25:03.379077 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2022-10-31T16:25:03.385637 #321159]  INFO -- default-ubuntu-2004: [2022-10-31T14:24:56+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: bash[ruby install] (errbit::ruby_install line 31) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+I, [2022-10-31T16:25:03.385689 #321159]  INFO -- default-ubuntu-2004: ---- Begin output of "bash"  ----
+I, [2022-10-31T16:25:03.385707 #321159]  INFO -- default-ubuntu-2004: STDOUT: 
+I, [2022-10-31T16:25:03.385719 #321159]  INFO -- default-ubuntu-2004: STDERR: rbenv: /home/vagrant/.rbenv/versions/2.7.6 already exists
+I, [2022-10-31T16:25:03.385728 #321159]  INFO -- default-ubuntu-2004: ---- End output of "bash"  ----
+I, [2022-10-31T16:25:03.385741 #321159]  INFO -- default-ubuntu-2004: Ran "bash"  returned 1
+E, [2022-10-31T16:25:03.411974 #321159] ERROR -- default-ubuntu-2004: Converge failed on instance <default-ubuntu-2004>.
+E, [2022-10-31T16:25:03.412118 #321159] ERROR -- default-ubuntu-2004: ------Exception-------
+E, [2022-10-31T16:25:03.412150 #321159] ERROR -- default-ubuntu-2004: Class: Kitchen::ActionFailed
+E, [2022-10-31T16:25:03.412172 #321159] ERROR -- default-ubuntu-2004: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2022-10-31T16:25:03.412185 #321159] ERROR -- default-ubuntu-2004: ----------------------
+E, [2022-10-31T16:25:03.412196 #321159] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2022-10-31T16:25:03.412206 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2022-10-31T16:25:03.412220 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2022-10-31T16:25:03.412245 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-10-31T16:25:03.412256 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-10-31T16:25:03.412270 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-10-31T16:25:03.412290 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-10-31T16:25:03.412313 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:523:in `action'
+E, [2022-10-31T16:25:03.412325 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-10-31T16:25:03.412338 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-10-31T16:25:03.412358 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-10-31T16:25:03.412370 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-10-31T16:25:03.412381 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:390:in `each'
+E, [2022-10-31T16:25:03.412391 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-10-31T16:25:03.412402 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:139:in `converge'
+E, [2022-10-31T16:25:03.412423 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-10-31T16:25:03.412442 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-10-31T16:25:03.412463 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-10-31T16:25:03.412488 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-10-31T16:25:03.412506 #321159] ERROR -- default-ubuntu-2004: ----End Backtrace-----
+E, [2022-10-31T16:25:03.412520 #321159] ERROR -- default-ubuntu-2004: ---Nested Exception---
+E, [2022-10-31T16:25:03.412539 #321159] ERROR -- default-ubuntu-2004: Class: Kitchen::Transport::SshFailed
+E, [2022-10-31T16:25:03.412550 #321159] ERROR -- default-ubuntu-2004: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2022-10-31T16:25:03.412561 #321159] ERROR -- default-ubuntu-2004: ----------------------
+E, [2022-10-31T16:25:03.412571 #321159] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2022-10-31T16:25:03.412581 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2022-10-31T16:25:03.412602 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2022-10-31T16:25:03.412615 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-10-31T16:25:03.412625 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-10-31T16:25:03.412639 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-10-31T16:25:03.412664 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-10-31T16:25:03.412676 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:523:in `action'
+E, [2022-10-31T16:25:03.412687 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-10-31T16:25:03.412697 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-10-31T16:25:03.412716 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-10-31T16:25:03.412730 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-10-31T16:25:03.412740 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:390:in `each'
+E, [2022-10-31T16:25:03.412753 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-10-31T16:25:03.412767 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/instance.rb:139:in `converge'
+E, [2022-10-31T16:25:03.412784 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-10-31T16:25:03.412795 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-10-31T16:25:03.412805 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.1/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-10-31T16:25:03.412819 #321159] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-10-31T16:25:03.412841 #321159] ERROR -- default-ubuntu-2004: ----End Backtrace-----
