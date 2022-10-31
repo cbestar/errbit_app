@@ -18,12 +18,12 @@ end
     #action :update
 #end
 
-#%w(curl g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev libssl-dev).each do |pack|
-#  res = package pack do
-#    action :nothing
-#  end
-#  res.run_action(:install)
-#end
+%w(curl g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev libssl-dev).each do |pack|
+  res = package pack do
+    action :nothing
+  end
+  res.run_action(:install)
+end
 
 apt_package 'git' do
     action :install

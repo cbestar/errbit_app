@@ -36,6 +36,7 @@ end
 
 apt_package 'mongodb-org' do
     action :install
+    not_if "test -f /usr/bin/mongod"
 end
 
 # Enable and start service

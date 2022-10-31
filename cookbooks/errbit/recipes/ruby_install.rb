@@ -1,16 +1,33 @@
 #
 # Cookbook:: errbit
-# Recipe:: ruby_install
+# Recipe:: ruby_install using rbenv
 #
 # Copyright:: 2022, Serghei vrazovski, All Rights Reserved.
 
 execute 'RBENV Installation' do
-    command 'curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash'
-    command 'echo export PATH="$HOME/.rbenv/bin:$PATH" >> ~/.bashrc'
-    command 'echo eval "$(rbenv init -)" >> ~/.bashrc'
-    command 'echo source home/vagrant/.bashrc'
-    action :run
-    #command 'rbenv global 2.7.6'
+   command 'curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash'
 end
 
+bash "run bundle install in app directory" do
+    code <<-EOH
+    echo 'export PATH="/home/vagrant/.rbenv/bin:$PATH"' >> home/vagrant/.bashrc
+   EOH
+end
 
+bash "run bundle install in app directory" do
+    code <<-EOH
+    echo 'eval "$(rbenv init -)"' >> /home/vagrant/.bashrc
+    EOH
+end
+
+bash 'SOURCE' do
+    code 'source "/home/vagrant/.bashrc"'
+end
+
+bash "run bundle install in app directory" do
+    code 'source /home/vagrant/.bashrc'
+end
+
+bash 'ruby install' do
+    code '/home/vagrant/.rbenv/bin/rbenv install 2.7.6'
+end
