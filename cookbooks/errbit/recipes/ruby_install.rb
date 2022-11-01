@@ -31,3 +31,20 @@ end
 bash 'ruby install' do
     code '/home/vagrant/.rbenv/bin/rbenv install 2.7.6'
 end
+
+execute "chown .rbenv" do
+    command "chown -R vagrant:vagrant /home/vagrant/.rbenv"
+    user 'root'
+  end
+
+ execute 'Set global ruby version 2.7.6' do
+    user 'vagrant'
+    command '/home/vagrant/.rbenv/bin/rbenv global 2.7.6'
+end
+
+
+
+
+
+
+

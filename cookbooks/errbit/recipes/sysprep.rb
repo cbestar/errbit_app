@@ -9,14 +9,23 @@ file node['file'] do
   content 'Test if attributes are working'
 end
 
+execute 'Clear outdated packages' do
+  cwd '/var/lib/apt/lists'
+  command 'rm -rf *'
+  end
+
+execute 'Set timezone' do
+  command 'sudo timedatectl set-timezone Europe/Chisinau'
+end
+
 apt_update 'UPDATE BEFORE DEPENDENSIES INSTALLATION' do
   action :update
 end
 
-#apt_update 'update apt cache' do
-    #ignore_failure true
-    #action :update
-#end
+apt_update 'update apt cache' do
+    ignore_failure true
+    action :update
+end
 
 %w(curl g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev libssl-dev).each do |pack|
   res = package pack do
