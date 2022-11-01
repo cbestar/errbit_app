@@ -29,6 +29,7 @@ nodes
 
 # ##Chef
  .kitchen/*.log
+*.yml
 # .vagrant
 # nodes
 # metadata.json
