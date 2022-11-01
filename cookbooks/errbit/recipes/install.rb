@@ -17,12 +17,11 @@
 #    code "bundle install"
 #  end
 
-#execute "bundle-install" do
-    #user "my_user"
-    #cwd "/home/vagrant/errbit_app"
-    #command "bundle install"
-    #action :run
-  #end
+execute "Bundle install" do
+    cwd node['errbit']['app_path']
+    user 'vagrant'
+    command "bundle install"
+end
 
 
 

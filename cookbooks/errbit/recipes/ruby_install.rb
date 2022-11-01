@@ -28,9 +28,15 @@ bash "run bundle install in app directory" do
     code 'source /home/vagrant/.bashrc'
 end
 
-bash 'ruby install' do
-    code '/home/vagrant/.rbenv/bin/rbenv install 2.7.6'
-end
+#bash 'ruby install' do
+#    code '/home/vagrant/.rbenv/bin/rbenv install 2.7.6'
+#    not_if "ruby -v | grep \'#{node['errbit']['rubyver']}\'"
+#end
+
+#execute 'ruby install' do
+#    command "/home/vagrant/.rbenv/bin/rbenv install \'#{node['errbit']['rubyver']}\'"
+#    not_if "ruby -v | grep \'#{node['errbit']['rubyver']}\'"
+#end
 
 execute "chown .rbenv" do
     command "chown -R vagrant:vagrant /home/vagrant/.rbenv"
