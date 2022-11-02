@@ -28,7 +28,7 @@ nodes
 # !cookbooks/chef_workstation
 
 # ##Chef
- .kitchen/*.log
+/.kitchen/
 *.yml
 # .vagrant
 # nodes
