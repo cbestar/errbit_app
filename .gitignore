@@ -29,6 +29,8 @@ nodes
 
 # ##Chef
 /.kitchen/
+/cookbooks/errbit/.kitchen
+/cookbooks/errbit/.kitchen/
 *.yml
 *.log
 # .vagrant
