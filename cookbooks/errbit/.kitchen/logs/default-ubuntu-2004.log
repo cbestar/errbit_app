@@ -1,0 +1,153 @@
+I, [2022-11-02T17:08:34.210150 #35077]  INFO -- default-ubuntu-2004: -----> Converging <default-ubuntu-2004>...
+I, [2022-11-02T17:08:34.250685 #35077]  INFO -- default-ubuntu-2004: Preparing files for transfer
+I, [2022-11-02T17:08:34.250882 #35077]  INFO -- default-ubuntu-2004: Installing cookbooks for Policyfile /home/svrazovski/chef-repo/cookbooks/errbit/Policyfile.rb using `/opt/chef-workstation/bin/chef-cli install`
+I, [2022-11-02T17:08:34.796004 #35077]  INFO -- default-ubuntu-2004: Installing cookbooks from lock
+I, [2022-11-02T17:08:34.802224 #35077]  INFO -- default-ubuntu-2004: Installing errbit 0.1.0
+I, [2022-11-02T17:08:34.815909 #35077]  INFO -- default-ubuntu-2004: Updating policy lock using `/opt/chef-workstation/bin/chef-cli update`
+I, [2022-11-02T17:08:35.354370 #35077]  INFO -- default-ubuntu-2004: Building policy errbit
+I, [2022-11-02T17:08:35.354443 #35077]  INFO -- default-ubuntu-2004: Expanded run list: recipe[errbit::default]
+I, [2022-11-02T17:08:35.354459 #35077]  INFO -- default-ubuntu-2004: Caching Cookbooks...
+I, [2022-11-02T17:08:35.354961 #35077]  INFO -- default-ubuntu-2004: Installing errbit >= 0.0.0 from path
+I, [2022-11-02T17:08:49.721145 #35077]  INFO -- default-ubuntu-2004: 
+I, [2022-11-02T17:08:49.721191 #35077]  INFO -- default-ubuntu-2004: Lockfile written to /home/svrazovski/chef-repo/cookbooks/errbit/Policyfile.lock.json
+I, [2022-11-02T17:08:49.800812 #35077]  INFO -- default-ubuntu-2004: Policy revision id: e8752f7c632a96f4dc352c8b3cb5e68aaecdbe52bf3c0b179822ef37577d8f16
+I, [2022-11-02T17:08:49.828494 #35077]  INFO -- default-ubuntu-2004: Preparing dna.json
+I, [2022-11-02T17:08:49.828872 #35077]  INFO -- default-ubuntu-2004: Exporting cookbook dependencies from Policyfile /tmp/default-ubuntu-2004-sandbox-20221102-35077-y9qokc using `/opt/chef-workstation/bin/chef-cli export`...
+I, [2022-11-02T17:08:51.002473 #35077]  INFO -- default-ubuntu-2004: Exported policy 'errbit' to /tmp/default-ubuntu-2004-sandbox-20221102-35077-y9qokc
+I, [2022-11-02T17:08:51.002548 #35077]  INFO -- default-ubuntu-2004: 
+I, [2022-11-02T17:08:51.002575 #35077]  INFO -- default-ubuntu-2004: To converge this system with the exported policy, run:
+I, [2022-11-02T17:08:51.002600 #35077]  INFO -- default-ubuntu-2004:   cd /tmp/default-ubuntu-2004-sandbox-20221102-35077-y9qokc
+I, [2022-11-02T17:08:51.002633 #35077]  INFO -- default-ubuntu-2004:   chef-client -z
+I, [2022-11-02T17:08:51.016098 #35077]  INFO -- default-ubuntu-2004: Removing non-cookbook files before transfer
+I, [2022-11-02T17:08:51.016360 #35077]  INFO -- default-ubuntu-2004: Preparing validation.pem
+I, [2022-11-02T17:08:51.016648 #35077]  INFO -- default-ubuntu-2004: Preparing client.rb
+I, [2022-11-02T17:08:51.965256 #35077]  INFO -- default-ubuntu-2004: -----> Chef installation detected (install only if missing)
+I, [2022-11-02T17:08:52.079898 #35077]  INFO -- default-ubuntu-2004: Transferring files to <default-ubuntu-2004>
+I, [2022-11-02T17:08:57.460962 #35077]  INFO -- default-ubuntu-2004: Chef Infra Client, version 18.0.169
+I, [2022-11-02T17:08:57.461227 #35077]  INFO -- default-ubuntu-2004: Patents: https://www.chef.io/patents
+I, [2022-11-02T17:08:57.461435 #35077]  INFO -- default-ubuntu-2004: Infra Phase starting
+I, [2022-11-02T17:08:59.374499 #35077]  INFO -- default-ubuntu-2004: Using Policyfile 'errbit' at revision 'e8752f7c632a96f4dc352c8b3cb5e68aaecdbe52bf3c0b179822ef37577d8f16'
+I, [2022-11-02T17:08:59.383253 #35077]  INFO -- default-ubuntu-2004: Resolving cookbooks for run list: ["errbit::default@0.1.0 (8fa4780)"]
+I, [2022-11-02T17:08:59.402792 #35077]  INFO -- default-ubuntu-2004: Synchronizing cookbooks:
+I, [2022-11-02T17:08:59.436434 #35077]  INFO -- default-ubuntu-2004:   - errbit (0.1.0)
+I, [2022-11-02T17:08:59.436656 #35077]  INFO -- default-ubuntu-2004: Installing cookbook gem dependencies:
+I, [2022-11-02T17:08:59.439173 #35077]  INFO -- default-ubuntu-2004: Compiling cookbooks...
+I, [2022-11-02T17:08:59.821669 #35077]  INFO -- default-ubuntu-2004: Loading Chef InSpec profile files:
+I, [2022-11-02T17:08:59.821828 #35077]  INFO -- default-ubuntu-2004: Loading Chef InSpec input files:
+I, [2022-11-02T17:08:59.822120 #35077]  INFO -- default-ubuntu-2004: Loading Chef InSpec waiver files:
+I, [2022-11-02T17:08:59.825396 #35077]  INFO -- default-ubuntu-2004: Recipe: errbit::sysprep
+I, [2022-11-02T17:09:00.699265 #35077]  INFO -- default-ubuntu-2004:   * apt_package[curl] action install (up to date)
+I, [2022-11-02T17:09:00.796838 #35077]  INFO -- default-ubuntu-2004:   * apt_package[g++] action install (up to date)
+I, [2022-11-02T17:09:00.921355 #35077]  INFO -- default-ubuntu-2004:   * apt_package[gcc] action install (up to date)
+I, [2022-11-02T17:09:01.048948 #35077]  INFO -- default-ubuntu-2004:   * apt_package[autoconf] action install (up to date)
+I, [2022-11-02T17:09:01.162973 #35077]  INFO -- default-ubuntu-2004:   * apt_package[automake] action install (up to date)
+I, [2022-11-02T17:09:01.281920 #35077]  INFO -- default-ubuntu-2004:   * apt_package[bison] action install (up to date)
+I, [2022-11-02T17:09:01.415691 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libc6-dev] action install (up to date)
+I, [2022-11-02T17:09:01.504020 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libffi-dev] action install (up to date)
+I, [2022-11-02T17:09:01.621915 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libgdbm-dev] action install (up to date)
+I, [2022-11-02T17:09:01.733353 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libncurses5-dev] action install (up to date)
+I, [2022-11-02T17:09:01.860209 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libsqlite3-dev] action install (up to date)
+I, [2022-11-02T17:09:01.975392 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libtool] action install (up to date)
+I, [2022-11-02T17:09:02.080465 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libyaml-dev] action install (up to date)
+I, [2022-11-02T17:09:02.211175 #35077]  INFO -- default-ubuntu-2004:   * apt_package[make] action install (up to date)
+I, [2022-11-02T17:09:02.334546 #35077]  INFO -- default-ubuntu-2004:   * apt_package[pkg-config] action install (up to date)
+I, [2022-11-02T17:09:02.450165 #35077]  INFO -- default-ubuntu-2004:   * apt_package[sqlite3] action install (up to date)
+I, [2022-11-02T17:09:02.590756 #35077]  INFO -- default-ubuntu-2004:   * apt_package[zlib1g-dev] action install (up to date)
+I, [2022-11-02T17:09:02.740838 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libgmp-dev] action install (up to date)
+I, [2022-11-02T17:09:02.850106 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libreadline-dev] action install (up to date)
+I, [2022-11-02T17:09:02.971162 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libssl-dev] action install (up to date)
+I, [2022-11-02T17:09:02.984886 #35077]  INFO -- default-ubuntu-2004:   Converging 42 resources
+I, [2022-11-02T17:09:02.988273 #35077]  INFO -- default-ubuntu-2004: Recipe: errbit::default
+I, [2022-11-02T17:09:02.993049 #35077]  INFO -- default-ubuntu-2004:   * apt_update[UPDATE!!!!!!!!!!!!!!!!!!!!!!!update] action update
+I, [2022-11-02T17:09:02.996816 #35077]  INFO -- default-ubuntu-2004:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2022-11-02T17:09:03.017603 #35077]  INFO -- default-ubuntu-2004:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2022-11-02T17:09:03.017681 #35077]  INFO -- default-ubuntu-2004:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2022-11-02T17:09:06.590081 #35077]  INFO -- default-ubuntu-2004:     * execute[apt-get -q update] action run
+I, [2022-11-02T17:09:06.599692 #35077]  INFO -- default-ubuntu-2004:       - execute ["apt-get", "-q", "update"]
+I, [2022-11-02T17:09:06.634782 #35077]  INFO -- default-ubuntu-2004:     - force update new lists of packages
+I, [2022-11-02T17:09:06.641219 #35077]  INFO -- default-ubuntu-2004: Recipe: errbit::sysprep
+I, [2022-11-02T17:09:06.644483 #35077]  INFO -- default-ubuntu-2004:   * apt_update[UPDATE!!!!!!!!!!!!!!!!!!!!!!!update] action update
+I, [2022-11-02T17:09:06.656936 #35077]  INFO -- default-ubuntu-2004:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2022-11-02T17:09:06.696571 #35077]  INFO -- default-ubuntu-2004:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2022-11-02T17:09:06.713246 #35077]  INFO -- default-ubuntu-2004:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2022-11-02T17:09:08.562497 #35077]  INFO -- default-ubuntu-2004:     * execute[apt-get -q update] action run
+I, [2022-11-02T17:09:08.562763 #35077]  INFO -- default-ubuntu-2004:       - execute ["apt-get", "-q", "update"]
+I, [2022-11-02T17:09:08.564173 #35077]  INFO -- default-ubuntu-2004:     - force update new lists of packages
+I, [2022-11-02T17:09:08.565313 #35077]  INFO -- default-ubuntu-2004:   * apt_package[curl] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.566977 #35077]  INFO -- default-ubuntu-2004:   * apt_package[g++] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.567392 #35077]  INFO -- default-ubuntu-2004:   * apt_package[gcc] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.568194 #35077]  INFO -- default-ubuntu-2004:   * apt_package[autoconf] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.569118 #35077]  INFO -- default-ubuntu-2004:   * apt_package[automake] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.569644 #35077]  INFO -- default-ubuntu-2004:   * apt_package[bison] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.570075 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libc6-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.570840 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libffi-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.571155 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libgdbm-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.571926 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libncurses5-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.572499 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libsqlite3-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.573094 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libtool] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.575484 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libyaml-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.576057 #35077]  INFO -- default-ubuntu-2004:   * apt_package[make] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.576702 #35077]  INFO -- default-ubuntu-2004:   * apt_package[pkg-config] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.577040 #35077]  INFO -- default-ubuntu-2004:   * apt_package[sqlite3] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.577535 #35077]  INFO -- default-ubuntu-2004:   * apt_package[zlib1g-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.577960 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libgmp-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.578611 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libreadline-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.578664 #35077]  INFO -- default-ubuntu-2004:   * apt_package[libssl-dev] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:08.597938 #35077]  INFO -- default-ubuntu-2004:   * apt_package[git] action install (skipped due to not_if)
+I, [2022-11-02T17:09:08.838760 #35077]  INFO -- default-ubuntu-2004:   * execute[Set timezone] action run
+I, [2022-11-02T17:09:08.838815 #35077]  INFO -- default-ubuntu-2004:     - execute sudo timedatectl set-timezone Europe/Chisinau
+I, [2022-11-02T17:09:08.927216 #35077]  INFO -- default-ubuntu-2004:   * directory[/opt/errbit_app] action delete
+I, [2022-11-02T17:09:08.928068 #35077]  INFO -- default-ubuntu-2004:     - delete existing directory /opt/errbit_app
+I, [2022-11-02T17:09:08.930108 #35077]  INFO -- default-ubuntu-2004:   * directory[/opt/errbit_app] action create
+I, [2022-11-02T17:09:08.949980 #35077]  INFO -- default-ubuntu-2004:     - create new directory /opt/errbit_app
+I, [2022-11-02T17:09:08.950222 #35077]  INFO -- default-ubuntu-2004:     - change mode from '' to '0755'
+I, [2022-11-02T17:09:08.950254 #35077]  INFO -- default-ubuntu-2004:     - change owner from '' to 'vagrant'
+I, [2022-11-02T17:09:08.951530 #35077]  INFO -- default-ubuntu-2004:     - change group from '' to 'vagrant'
+I, [2022-11-02T17:09:21.362712 #35077]  INFO -- default-ubuntu-2004:   * execute[Git clone errbit application] action run
+I, [2022-11-02T17:09:21.362941 #35077]  INFO -- default-ubuntu-2004:     - execute git clone https://github.com/errbit/errbit.git .
+I, [2022-11-02T17:09:21.363788 #35077]  INFO -- default-ubuntu-2004: Recipe: errbit::ruby_install
+I, [2022-11-02T17:09:21.900379 #35077]  INFO -- default-ubuntu-2004:   * execute[RBENV Installation] action run
+I, [2022-11-02T17:09:21.900580 #35077]  INFO -- default-ubuntu-2004:     - execute curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+I, [2022-11-02T17:09:21.925152 #35077]  INFO -- default-ubuntu-2004:   * bash[run bundle install in app directory] action run
+I, [2022-11-02T17:09:21.925845 #35077]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-11-02T17:09:21.966797 #35077]  INFO -- default-ubuntu-2004:   * bash[run bundle install in app directory] action run
+I, [2022-11-02T17:09:21.973064 #35077]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-11-02T17:09:22.068701 #35077]  INFO -- default-ubuntu-2004:   * bash[SOURCE] action run
+I, [2022-11-02T17:09:22.068759 #35077]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-11-02T17:09:22.124196 #35077]  INFO -- default-ubuntu-2004:   * bash[run bundle install in app directory] action run
+I, [2022-11-02T17:09:22.124520 #35077]  INFO -- default-ubuntu-2004:     - execute "bash" 
+I, [2022-11-02T17:09:22.193140 #35077]  INFO -- default-ubuntu-2004:   * execute[ruby install] action run (skipped due to not_if)
+I, [2022-11-02T17:09:22.678768 #35077]  INFO -- default-ubuntu-2004:   * execute[chown .rbenv] action run
+I, [2022-11-02T17:09:22.687207 #35077]  INFO -- default-ubuntu-2004:     - execute chown -R vagrant:vagrant /home/vagrant/.rbenv
+I, [2022-11-02T17:09:22.796188 #35077]  INFO -- default-ubuntu-2004:   * execute[Set global ruby version 2.7.6] action run
+I, [2022-11-02T17:09:22.804473 #35077]  INFO -- default-ubuntu-2004:     - execute /home/vagrant/.rbenv/bin/rbenv global 2.7.6
+I, [2022-11-02T17:09:22.806798 #35077]  INFO -- default-ubuntu-2004: Recipe: errbit::mongo_install
+I, [2022-11-02T17:09:22.944325 #35077]  INFO -- default-ubuntu-2004:   * apt_package[gnupg] action install (up to date)
+I, [2022-11-02T17:09:22.947382 #35077]  INFO -- default-ubuntu-2004:   * apt_repository[mongodb] action add
+I, [2022-11-02T17:09:22.968625 #35077]  INFO -- default-ubuntu-2004:     * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:22.976463 #35077]  INFO -- default-ubuntu-2004:     * apt_update[mongodb] action nothing (skipped due to action :nothing)
+I, [2022-11-02T17:09:25.344632 #35077]  INFO -- default-ubuntu-2004:     * remote_file[/tmp/kitchen/cache/https___www_mongodb_org_static_pgp_server-6_0_asc] action create (up to date)
+I, [2022-11-02T17:09:25.717428 #35077]  INFO -- default-ubuntu-2004:     * execute[apt-key add /tmp/kitchen/cache/https___www_mongodb_org_static_pgp_server-6_0_asc] action run (skipped due to not_if)
+I, [2022-11-02T17:09:26.054065 #35077]  INFO -- default-ubuntu-2004:     * file[/etc/apt/sources.list.d/mongodb.list] action create (up to date)
+I, [2022-11-02T17:09:26.055508 #35077]  INFO -- default-ubuntu-2004:      (up to date)
+I, [2022-11-02T17:09:26.058549 #35077]  INFO -- default-ubuntu-2004:   * apt_update[update apt cache] action update
+I, [2022-11-02T17:09:26.062172 #35077]  INFO -- default-ubuntu-2004:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2022-11-02T17:09:26.065320 #35077]  INFO -- default-ubuntu-2004:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2022-11-02T17:09:26.068945 #35077]  INFO -- default-ubuntu-2004:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2022-11-02T17:09:28.790105 #35077]  INFO -- default-ubuntu-2004:     * execute[apt-get -q update] action run
+I, [2022-11-02T17:09:28.802060 #35077]  INFO -- default-ubuntu-2004:       - execute ["apt-get", "-q", "update"]
+I, [2022-11-02T17:09:28.807579 #35077]  INFO -- default-ubuntu-2004:     - force update new lists of packages
+I, [2022-11-02T17:09:28.849547 #35077]  INFO -- default-ubuntu-2004:   * apt_package[mongodb-org] action install (skipped due to not_if)
+I, [2022-11-02T17:09:28.940062 #35077]  INFO -- default-ubuntu-2004:   * service[mongod] action enable (up to date)
+I, [2022-11-02T17:09:29.031767 #35077]  INFO -- default-ubuntu-2004:   * service[mongod] action start (up to date)
+I, [2022-11-02T17:09:29.031905 #35077]  INFO -- default-ubuntu-2004: Recipe: errbit::install
+I, [2022-11-02T17:09:46.182863 #35077]  INFO -- default-ubuntu-2004:   * execute[libv8-node install] action run
+I, [2022-11-02T17:09:46.183000 #35077]  INFO -- default-ubuntu-2004:     - execute /home/vagrant/.rbenv/versions/2.7.6/bin/gem install libv8-node --version 16.10.0.0 --platform x86_64-linux-libc
+I, [2022-11-02T17:13:16.818535 #35077]  INFO -- default-ubuntu-2004:   * execute[Bundle install] action run
+I, [2022-11-02T17:13:16.825349 #35077]  INFO -- default-ubuntu-2004:     - execute /home/vagrant/.rbenv/versions/2.7.6/bin/bundle install
+I, [2022-11-02T17:13:23.958156 #35077]  INFO -- default-ubuntu-2004: 
+I, [2022-11-02T17:13:23.958235 #35077]  INFO -- default-ubuntu-2004: Running handlers:
+I, [2022-11-02T17:13:23.977883 #35077]  INFO -- default-ubuntu-2004: Running handlers complete
+I, [2022-11-02T17:13:24.033679 #35077]  INFO -- default-ubuntu-2004: Infra Phase complete, 19/80 resources updated in 04 minutes 26 seconds
+I, [2022-11-02T17:13:25.271757 #35077]  INFO -- default-ubuntu-2004: Downloading files from <default-ubuntu-2004>
+I, [2022-11-02T17:13:25.273381 #35077]  INFO -- default-ubuntu-2004: Finished converging <default-ubuntu-2004> (4m51.06s).

@@ -33,10 +33,11 @@ end
 #    not_if "ruby -v | grep \'#{node['errbit']['rubyver']}\'"
 #end
 
-#execute 'ruby install' do
-#    command "/home/vagrant/.rbenv/bin/rbenv install \'#{node['errbit']['rubyver']}\'"
-#    not_if "ruby -v | grep \'#{node['errbit']['rubyver']}\'"
-#end
+execute 'ruby install' do
+    command "/home/vagrant/.rbenv/bin/rbenv install \'#{node['errbit']['rubyver']}\'"
+    #not_if "ruby -v | grep \'#{node['errbit']['rubyver']}\'"
+    not_if "test -f /home/vagrant/.rbenv/versions/2.7.6/bin/ruby"
+end
 
 execute "chown .rbenv" do
     command "chown -R vagrant:vagrant /home/vagrant/.rbenv"

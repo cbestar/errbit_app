@@ -1,0 +1,3 @@
+I, [2022-11-02T17:08:33.666090 #35077]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.3.1)
+I, [2022-11-02T17:08:34.210099 #35077]  INFO -- Kitchen: -----> Converging <default-ubuntu-2004>...
+I, [2022-11-02T17:13:25.273615 #35077]  INFO -- Kitchen: -----> Test Kitchen is finished. (4m51.61s)

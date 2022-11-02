@@ -16,6 +16,7 @@ Vagrant.configure(API_VER) do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "base"
   config.vm.network "private_network", type: "dhcp"
+  config.vm.network "private_network", ip: "192.168.200.100"
 
   config.vm.network "forwarded_port", guest: 80, host: 8080 # web server
   config.vm.network "forwarded_port", guest: 5432, host: 5432 # Postgres
