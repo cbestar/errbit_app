@@ -37,7 +37,7 @@ execute 'ruby install' do
   command "/home/vagrant/.rbenv/bin/rbenv install \'#{node['errbit']['rubyver']}\'"
   # not_if "ruby -v | grep \'#{node['errbit']['rubyver']}\'"
   # not_if "test -f /home/vagrant/.rbenv/versions/2.7.6/bin/ruby"
-  not_if ::File.exist?('/home/vagrant/.rbenv/versions/2.7.6/bin/ruby')
+  not_if { ::File.exist?('/home/vagrant/.rbenv/versions/2.7.6/bin/ruby') }
 end
 
 execute 'chown .rbenv' do

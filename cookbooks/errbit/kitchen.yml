@@ -27,7 +27,16 @@ platforms:
   - name: ubuntu-20.04
 
 suites:
+
   - name: default
+    driver:
+      vm_hostname: errbitvm
+      network:
+      - ["private_network", {ip: "192.168.56.22"}]
+      - ["forwarded_port", {guest: 3000, host: 3000, host_ip: 192.168.56.22}]
+      customize:
+        memory: 2048
+        cpus: 4
     run_list:
       - recipe[errbit::default]
     verifier:

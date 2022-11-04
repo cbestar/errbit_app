@@ -22,7 +22,7 @@ end
 apt_package 'git' do
   action :install
   # not_if "test -f /usr/bin/git"
-  not_if not_if ::File.exist?('/usr/bin/git')
+  not_if { ::File.exist?('/usr/bin/git') }
 end
 
 execute 'Set timezone' do

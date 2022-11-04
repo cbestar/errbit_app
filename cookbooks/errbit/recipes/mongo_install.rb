@@ -7,7 +7,7 @@
 apt_package 'gnupg' do
   action :install
   # not_if 'test -f /usr/bin/gnupg'
-  not_if ::File.exist?('/usr/bin/gnupg')
+  not_if { ::File.exist?('/usr/bin/gnupg') }
 end
 
 apt_repository 'mongodb' do
@@ -37,7 +37,7 @@ end
 apt_package 'mongodb-org' do
   action :install
   # not_if 'test -f /usr/bin/mongod'
-  not_if ::File.exist?('/usr/bin/mongod')
+  not_if { ::File.exist?('/usr/bin/mongod') }
 end
 
 # Enable and start service
