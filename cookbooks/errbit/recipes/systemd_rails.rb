@@ -11,7 +11,7 @@ systemd_unit 'rails.service' do
   After=network.target
   [Service]
   Type=simple
-  WatchdogSec=10
+  WatchdogSec=30
   User=vagrant
   WorkingDirectory=/opt/errbit_app
   ExecStart=/home/vagrant/.rbenv/versions/2.7.6/bin/rails s -b 0.0.0.0

@@ -5,7 +5,7 @@
 # Copyright:: 2022, The Authors, All Rights Reserved.
 
 execute 'Daemon reload' do
-    command 'systemctl daemon reload'
+    command 'systemctl daemon-reload'
 end
 
 execute 'Start rails.services' do
