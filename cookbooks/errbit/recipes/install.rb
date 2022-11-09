@@ -36,4 +36,8 @@ execute 'errbit bootstrap' do
   command '/home/vagrant/.rbenv/versions/2.7.6/bin/bundle exec /home/vagrant/.rbenv/versions/2.7.6/bin/rake errbit:bootstrap'
 end
 
+# Temporary solution
 
+execute 'link toi ruby binary' do
+  command 'ln -s /home/vagrant/.rbenv/shims/ruby /usr/bin/ruby'
+end
