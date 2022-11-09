@@ -9,9 +9,9 @@ apt_update 'update' do
   action 'update'
 end
 
-#include_recipe 'errbit::sysprep'
-#include_recipe 'errbit::ruby_install'
-#include_recipe 'errbit::mongo_install'
-#include_recipe 'errbit::install'
-#include_recipe 'errbit::systemd_rails'
+include_recipe 'errbit::sysprep'
+include_recipe 'errbit::ruby_install'
+include_recipe 'errbit::mongo_install'
+include_recipe 'errbit::install'
+include_recipe 'errbit::systemd_rails'
 include_recipe 'errbit::systemd_postinstall'
